@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,45 +9,85 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <TextClock
+        android:id="@+id/textClockID"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:format12Hour="hh:mm:ss"
+        android:gravity="center"
+        android:text="@string/text_Number_Visible"
+        android:textColor="@color/Green"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
 
-        <TextClock
-            android:id="@+id/textClockID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_Number_Visible"
-            android:textSize="120sp"
-            android:gravity="center"
-            android:textColor="@color/Green"
-            android:format12Hour="hh:mm:ss"/>
-
-        <TextClock
-            android:id="@+id/textAmPmID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_Number_Visible"
-            android:textSize="30sp"
-            android:gravity="left"
-            android:layout_marginLeft="30dp"
-            android:textColor="@color/Green"
-            android:format12Hour="a"/>
-
-    </LinearLayout>
+    <TextClock
+        android:id="@+id/textAmPmID"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:format12Hour="a"
+        android:gravity="left"
+        android:text="@string/AmPm"
+        android:textColor="@color/Green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
 
     <TextClock
         android:id="@+id/textDateID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_width="344dp"
+        android:layout_height="35dp"
+        android:format12Hour="MMM dd , yyyy"
         android:gravity="center"
-        android:layout_marginTop="20dp"
         android:textColor="@color/Green"
-        android:format12Hour="MMM dd , yyyy"/>
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <Button
+        android:id="@+id/StopWatchId"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/bgbtnggeen"
+        android:text="@string/StopWatch"
+        android:textColor="@color/Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PomodoroTimerId"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/PomodoroTimerId"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_weight="1"
+        android:background="@drawable/bgbtnggeen"
+        android:text="@string/PomodoroTimer"
+        android:textColor="@color/Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

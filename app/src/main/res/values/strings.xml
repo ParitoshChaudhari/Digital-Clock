@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Digi Clock</string>
     <string name="text_Number_Visible">00:00:00</string>
+    <string name="AmPm">am</string>
+    <string name="StopWatch">Stop Watch</string>
+    <string name="PomodoroTimer">Pomodoro Timer</string>
+    <string name="StartBtn">Start</string>
+    <string name="ResetBtn">Reset</string>
+    <string name="StopBtn">Stop</string>
+
 </resources>

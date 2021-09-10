@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".StopWatch">
+
+
+    <ImageView
+        android:id="@+id/bgCircleId"
+        android:layout_width="272dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:srcCompat="@drawable/bgcircle" />
+
+    <ImageView
+        android:id="@+id/bgArrowClockId"
+        android:layout_width="267dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/clockarrow" />
+
+
+    <Chronometer
+        android:id="@+id/timerID"
+        android:layout_width="181dp"
+        android:layout_height="55dp"
+        android:textAlignment="center"
+        android:textColor="@color/Green"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <Button
+        android:id="@+id/startBtnID"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bgbtnggeen"
+        android:text="@string/StartBtn"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <Button
+        android:id="@+id/stopBtnID"
+        android:layout_width="231dp"
+        android:layout_height="61dp"
+        android:background="@drawable/btnred"
+        android:text="@string/StopBtn"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/resetBtnID"
+        android:layout_width="231dp"
+        android:layout_height="61dp"
+        android:background="@drawable/btnred"
+        android:text="@string/ResetBtn"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
